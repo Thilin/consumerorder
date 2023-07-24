@@ -1,0 +1,10 @@
+type Order {
+    order: String
+    origin: String!
+    total: Float!
+    createdAt: String
+}
+
+type Query{
+    orders: [Order]
+}
