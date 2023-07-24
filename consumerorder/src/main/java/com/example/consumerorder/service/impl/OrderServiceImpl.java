@@ -18,7 +18,6 @@ public class OrderServiceImpl implements OrderService{
 
     @Override
     public Iterable<Order> findAll() {
-        var orders  = orderRepository.findAll(Sort.by(Sort.Direction.ASC, "id"));
-        return  orders;
+        return  orderRepository.findAll(Sort.by(Sort.Direction.ASC, "id"));
     }
 }
